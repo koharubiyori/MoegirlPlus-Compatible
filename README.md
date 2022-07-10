@@ -1,6 +1,6 @@
 ## MoegirlPlus-Compatible
 
-该项目为[Moegirl+](https://github.com/koharubiyori/Moegirl-plus-native]兼容模式渲染器。
+该项目为[Moegirl+](https://github.com/koharubiyori/Moegirl-plus-native)兼容模式渲染器。
 
 如要使用请新建此内容的油猴脚本：
 
