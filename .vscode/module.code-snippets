@@ -1,0 +1,27 @@
+{
+	"Create a module index.ts": {
+		"scope": "typescript, javascript",
+		"prefix": "cmi",
+		"body": [
+			"import './index.scss'",
+			"",
+			"// ${1:模块名称}",
+			"export default () => {",
+			"  ",
+			"}",
+		],
+	},
+
+	"Create a function index.ts": {
+		"scope": "typescript, javascript",
+		"prefix": "cfi",
+		"body": [
+			"import './index.scss'",
+			"",
+			"// ${1:模块名称}",
+			"export default function ${2:functionName}() {",
+			"  ",
+			"}",
+		],
+	}
+}
