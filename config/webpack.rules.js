@@ -10,17 +10,18 @@ module.exports = [
   {
     test: /\.(c|sc)ss$/,
     use: [
-      process.env.NODE_ENV === 'development' ? 
-        'style-loader' 
-      :
-        {
-          loader: MiniCssExtractPlugin.loader,
-          options: {
-            // 热更新时报错，暂时这样吧
-            // hmr: process.env.NODE_ENV === 'development',  // 开启热更新
-            // reloadAll: true // 如果 hmr 不工作, 请开启强制选项
-          }
-        },
+      'style-loader',
+      // process.env.NODE_ENV === 'development' ? 
+      //   'style-loader' 
+      // :
+      //   {
+      //     loader: MiniCssExtractPlugin.loader,
+      //     options: {
+      //       // 热更新时报错，暂时这样吧
+      //       // hmr: process.env.NODE_ENV === 'development',  // 开启热更新
+      //       // reloadAll: true // 如果 hmr 不工作, 请开启强制选项
+      //     }
+      //   },
       'css-loader', 
       {
         loader: 'postcss-loader',

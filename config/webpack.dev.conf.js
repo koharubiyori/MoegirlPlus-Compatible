@@ -16,7 +16,9 @@ module.exports = merge(baseConfig, {
     },
     allowedHosts: 'all',
     headers: {
-      'Access-Control-Allow-Origin': 'https://mzh.moegirl.org.cn',
+      'Access-Control-Allow-Origin': config.source === 'moegirl' ? 
+        'https://mzh.moegirl.org.cn' : 
+        'https://m.hmoegirl.com',
       'Access-Control-Allow-Credentials': true,
     },
     static: {

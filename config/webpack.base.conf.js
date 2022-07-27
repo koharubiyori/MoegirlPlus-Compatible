@@ -6,7 +6,7 @@ const devMode = process.env.NODE_ENV === 'development'
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, '../src/main.ts'),
+    'compatible-main': path.resolve(__dirname, '../src/main.ts'),
   },
 
   output: {
@@ -26,10 +26,10 @@ module.exports = {
   },
 
   plugins: [    
-    new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' : '[name].css',
-      chunkFilename: devMode ? '[id].css' : '[id].css',
-    }),
+    // new MiniCssExtractPlugin({
+    //   filename: devMode ? '[name].css' : '[name].css',
+    //   chunkFilename: devMode ? '[id].css' : '[id].css',
+    // }),
 
     // 拷贝目录
     // new CopyWebpackPlugin({

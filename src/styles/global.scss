@@ -1,3 +1,10 @@
-.header-container {
-  display: none;
+.header-container,    // 移动版头部
+.open-in-app-wrapper, // 打开app按钮
+#bottomRightCorner,   // 底部广告
+#noteTA-lang,         // 繁简转换提示
+.tocfloat,            // 目录
+#flowthread,          // 评论栏
+.pre-content          // 头部操作栏
+{       
+  display: none !important;
 }
